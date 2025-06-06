@@ -5,10 +5,11 @@
 **Project start date:** June 5, 2025
 
 The contents of this project are protected by copyright.  
-You may view the code, but copying, modifying, or redistributing it in any form is strictly prohibited.  
 For more information, please refer to the `LICENSE` file.
 
 > A professionally designed "Coming Soon" page with modern design, countdown functionality, and full accessibility support.
+
+![Screenshot der Webseitenland Coming-Soon-Seite](images/page.png)
 
 ## Features
 
