@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <!-- This website was created with Webseitenland. === Webseitenland - https://webseitenland.de/ === -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | Webseitenland - Neue Website in Kürze verfügbar</title>
+    <title>Coming Soon | Webseitenland - New Website Available Soon</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Webseitenland arbeitet an einer neuen Website. Bleiben Sie dran für professionelle Webdesign- und Entwicklungsdienstleistungen.">
-    <meta name="keywords" content="Coming Soon, Webseitenland, Webdesign, Website, Entwicklung, Launch">
+    <meta name="description" content="Webseitenland is working on a new website. Stay tuned for professional web design and development services.">
+    <meta name="keywords" content="Coming Soon, Webseitenland, Web Design, Website, Development, Launch">
     <meta name="author" content="Webseitenland">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#121212">
@@ -19,17 +19,17 @@
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Coming Soon | Webseitenland">
-    <meta property="og:description" content="Webseitenland arbeitet an einer neuen Website. Bleiben Sie dran für professionelle Webdesign- und Entwicklungsdienstleistungen.">
+    <meta property="og:description" content="Webseitenland is working on a new website. Stay tuned for professional web design and development services.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://webseitenland.de/coming-soon">
     <meta property="og:image" content="https://webseitenland.de/coming-soon/images/og-image.jpg">
     <meta property="og:site_name" content="Webseitenland">
-    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Coming Soon | Webseitenland">
-    <meta name="twitter:description" content="Webseitenland arbeitet an einer neuen Website. Bleiben Sie dran für professionelle Webdesign- und Entwicklungsdienstleistungen.">
+    <meta name="twitter:description" content="Webseitenland is working on a new website. Stay tuned for professional web design and development services.">
     <meta name="twitter:image" content="https://webseitenland.de/coming-soon/images/twitter-card.jpg">
     
     <!-- Preloading and Performance Optimization -->
@@ -57,7 +57,7 @@
         "@type": "WebSite",
         "name": "Webseitenland",
         "url": "https://webseitenland.de",
-        "description": "Webseitenland arbeitet an einer neuen Website. Bleiben Sie dran für professionelle Webdesign- und Entwicklungsdienstleistungen.",
+        "description": "Webseitenland is working on a new website. Stay tuned for professional web design and development services.",
         "publisher": {
             "@type": "Organization",
             "name": "Webseitenland",
@@ -81,7 +81,7 @@
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <div class="container" role="document">
         <header role="banner">
@@ -91,30 +91,30 @@
         </header>
 
         <main id="main-content" class="content" role="main">
-            <h1>Wir arbeiten an etwas <span>Großartigem</span></h1>
-            <p>Unsere neue Webseite wird bald verfügbar sein. Bleiben Sie dran!</p>
+            <h1>We're working on something <span>Amazing</span></h1>
+            <p>Our new website will be available soon. Stay tuned!</p>
 
             <div id="countdown-container" class="countdown" aria-live="polite" tabindex="0">
                 <div class="countdown-item">
-                    <span id="days" aria-label="Tage">00</span>
-                    <span class="label">Tage</span>
+                    <span id="days" aria-label="Days">00</span>
+                    <span class="label">Days</span>
                 </div>
                 <div class="countdown-item">
-                    <span id="hours" aria-label="Stunden">00</span>
-                    <span class="label">Stunden</span>
+                    <span id="hours" aria-label="Hours">00</span>
+                    <span class="label">Hours</span>
                 </div>
                 <div class="countdown-item">
-                    <span id="minutes" aria-label="Minuten">00</span>
-                    <span class="label">Minuten</span>
+                    <span id="minutes" aria-label="Minutes">00</span>
+                    <span class="label">Minutes</span>
                 </div>
                 <div class="countdown-item">
-                    <span id="seconds" aria-label="Sekunden">00</span>
-                    <span class="label">Sekunden</span>
+                    <span id="seconds" aria-label="Seconds">00</span>
+                    <span class="label">Seconds</span>
                 </div>
             </div>
 
-            <a href="https://webseitenland.de" class="cta-button" aria-label="Besuchen Sie Webseitenland"
-                target="_blank" rel="noopener">Besuchen Sie uns</a>
+            <a href="https://webseitenland.de" class="cta-button" aria-label="Visit Webseitenland"
+                target="_blank" rel="noopener">Visit Us</a>
         </main>
 
         <footer role="contentinfo">
@@ -123,7 +123,7 @@
                 <a href="#" class="social-icon" aria-label="Instagram">Instagram</a>
                 <a href="#" class="social-icon" aria-label="LinkedIn">LinkedIn</a>
             </div>
-            <p>&copy; <span id="current-year"></span> Webseitenland. Alle Rechte vorbehalten.</p>
+            <p>&copy; <span id="current-year"></span> Webseitenland. All rights reserved.</p>
         </footer>
     </div>
 
@@ -143,7 +143,7 @@
             daysFromNow: 30,
 
             // Text to display when the date is unknown
-            unknownDateText: "Demnächst verfügbar"
+            unknownDateText: "Coming Soon"
         };
 
         // Performance-optimized function for adding events
@@ -184,15 +184,15 @@
             document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, "0");
             
             // Update ARIA labels for screen readers
-            document.getElementById("days").setAttribute("aria-label", `${days} Tage`);
-            document.getElementById("hours").setAttribute("aria-label", `${hours} Stunden`);
-            document.getElementById("minutes").setAttribute("aria-label", `${minutes} Minuten`);
-            document.getElementById("seconds").setAttribute("aria-label", `${seconds} Sekunden`);
+            document.getElementById("days").setAttribute("aria-label", `${days} Days`);
+            document.getElementById("hours").setAttribute("aria-label", `${hours} Hours`);
+            document.getElementById("minutes").setAttribute("aria-label", `${minutes} Minutes`);
+            document.getElementById("seconds").setAttribute("aria-label", `${seconds} Seconds`);
             
             // Set overall ARIA description
             document.getElementById("countdown-container").setAttribute(
                 "aria-label", 
-                `Countdown: ${days} Tage, ${hours} Stunden, ${minutes} Minuten und ${seconds} Sekunden bis zum Launch`
+                `Countdown: ${days} Days, ${hours} Hours, ${minutes} Minutes and ${seconds} Seconds until launch`
             );
             
             // Update document title periodically for better engagement
@@ -228,13 +228,13 @@
 
                 // Announce countdown every 5 minutes for screen readers
                 if (minutes % 5 === 0 && seconds === 0) {
-                    announceToScreenReaders(`Noch ${days} Tage, ${hours} Stunden und ${minutes} Minuten bis zum Launch.`);
+                    announceToScreenReaders(`${days} Days, ${hours} Hours and ${minutes} Minutes until launch.`);
                 }
 
                 if (distance < 0) {
                     clearInterval(countdown);
-                    document.getElementById("countdown-container").innerHTML = "Wir sind bereit!";
-                    announceToScreenReaders("Wir sind bereit! Die Website ist jetzt verfügbar.");
+                    document.getElementById("countdown-container").innerHTML = "We're Ready!";
+                    announceToScreenReaders("We're Ready! The website is now available.");
                 }
             }, 1000);
 
@@ -242,14 +242,14 @@
             setTimeout(function () {
                 const launchDateObj = new Date(countDownDate);
                 const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                const formattedDate = launchDateObj.toLocaleDateString('de-DE', options);
-                announceToScreenReaders(`Countdown läuft bis zum ${formattedDate}.`);
+                const formattedDate = launchDateObj.toLocaleDateString('en-US', options);
+                announceToScreenReaders(`Countdown running until ${formattedDate}.`);
             }, 2000);
 
         } else {
             // If the date is unknown, display alternative text
             document.getElementById("countdown-container").innerHTML = `<p class="unknown-date" tabindex="0">${config.unknownDateText}</p>`;
-            announceToScreenReaders("Das genaue Startdatum ist noch nicht bekannt. Bitte besuchen Sie uns später wieder.");
+            announceToScreenReaders("The exact launch date is not yet known. Please check back later.");
         }
 
         // Keyboard navigation improvements
@@ -260,7 +260,7 @@
 
             // ESC key - announcement for users
             if (e.key === 'Escape') {
-                announceToScreenReaders("Coming Soon Seite von Webseitenland. Verwenden Sie die Tab-Taste zur Navigation.");
+                announceToScreenReaders("Coming Soon page by Webseitenland. Use the Tab key to navigate.");
             }
         });
 
@@ -302,10 +302,10 @@
     <!-- Structured error message for screen readers -->
     <noscript>
         <div class="sr-only">
-            Bitte aktivieren Sie JavaScript, um die volle Funktionalität dieser Seite zu nutzen.
+            Please enable JavaScript to use the full functionality of this page.
         </div>
         <div class="noscript-message">
-            <p>Diese Seite benötigt JavaScript. Bitte aktivieren Sie JavaScript in Ihren Browser-Einstellungen.</p>
+            <p>This page requires JavaScript. Please enable JavaScript in your browser settings.</p>
         </div>
     </noscript>
 </body>

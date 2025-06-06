@@ -4,12 +4,11 @@
 
 **Project start date:** June 5, 2025
 
-The contents of this project are protected by copyright.  
-For more information, please refer to the `LICENSE` file.
+The contents of this project are protected by copyright. For more information, please refer to the `LICENSE` file.
 
 > A professionally designed "Coming Soon" page with modern design, countdown functionality, and full accessibility support.
 
-![Screenshot der Webseitenland Coming-Soon-Seite](images/page.png)
+![Screenshot of the Webseitenland Coming Soon page](images/page.png)
 
 ## Features
 
@@ -31,6 +30,7 @@ For more information, please refer to the `LICENSE` file.
 ├── sitemap.xml             # XML sitemap
 ├── site.webmanifest        # Web app manifest
 ├── images/                 # Directory for images
+│   ├── page.png            # Sample Image
 │   ├── logo.png            # Webseitenland logo
 │   └── icons/              # Directory for icons
 │       ├── favicon.ico             # Favicon (main)

@@ -1,7 +1,7 @@
 {
   "name": "Webseitenland - Coming Soon",
   "short_name": "Webseitenland",
-  "description": "Webseitenland arbeitet an einer neuen Website. Bleiben Sie dran für professionelle Webdesign- und Entwicklungsdienstleistungen.",
+  "description": "Webseitenland is working on a new website. Stay tuned for professional web design and development services.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#121212",
@@ -18,7 +18,7 @@
       "type": "image/png"
     }
   ],
-  "lang": "de-DE",
+  "lang": "en-US",
   "dir": "ltr",
   "orientation": "portrait",
   "categories": ["business", "web development", "design"]
