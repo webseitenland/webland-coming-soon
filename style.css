@@ -1,0 +1,349 @@
+/* © Webseitenland – https://webseitenland.de – Code & Design by Webseitenland. See LICENSE for details. */
+
+:root {
+    --color-black: #121212;
+    --color-white: #ffffff;
+    --color-orange: #ff6b00;
+    --color-gray: #f0f0f0;
+    --color-text: #333333;
+    --focus-outline: 3px solid #ff8c3f;
+    --container-width: 1200px;
+    --font-family: 'Gruppo', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+/* CSS Reset and Basic Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    min-height: 100vh;
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container Layout */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    transition: transform var(--transition-speed) ease;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+h1 span {
+    color: var(--color-orange);
+}
+
+.content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Countdown Styles */
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.countdown-item {
+    margin: 0 15px;
+    min-width: 80px;
+}
+
+.countdown-item span {
+    display: block;
+}
+
+.countdown-item span:first-child {
+    font-size: 3rem;
+    font-weight: normal;
+    color: var(--color-orange);
+    margin-bottom: 5px;
+}
+
+.countdown-item .label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Unknown Date Text */
+.unknown-date {
+    font-size: 2.2rem;
+    color: var(--color-orange);
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all var(--transition-speed) ease;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-button:hover {
+    background-color: #ff8c3f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+/* Footer Styles */
+footer {
+    padding: 30px 0;
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    margin: 0 15px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.social-icon:hover {
+    color: var(--color-orange);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+/* Accessibility Styles */
+.visually-hidden, .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Improved Focus Styles for Accessibility */
+a:focus, button:focus, [tabindex="0"]:focus {
+    outline: var(--focus-outline);
+    outline-offset: 3px;
+    text-decoration: underline;
+}
+
+/* High contrast focus for keyboard navigation */
+a:focus-visible, button:focus-visible, [tabindex="0"]:focus-visible {
+    outline: var(--focus-outline);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+/* Skip to content link (hidden until focused) */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: var(--color-orange);
+    color: var(--color-white);
+    padding: 10px;
+    z-index: 100;
+    transition: top var(--transition-speed);
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* NoScript Message */
+.noscript-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    text-align: center;
+    padding: 15px;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .countdown, .cta-button, .social-links {
+        display: none;
+    }
+    
+    h1, p {
+        color: black;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .countdown {
+        flex-wrap: wrap;
+    }
+    
+    .countdown-item {
+        margin: 10px;
+    }
+    
+    .unknown-date {
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablet Optimization */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    h1 {
+        font-size: 2.4rem;
+    }
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+    .cta-button, .social-icon {
+        border: 2px solid currentColor;
+    }
+    
+    h1 span, .countdown-item span:first-child, .unknown-date {
+        color: HighlightText;
+    }
+}
+
+/* Optimization for Retina displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Dark mode fine-tuning */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-black: #0a0a0a;
+        --focus-outline: 3px solid #ff8c3f;
+    }
+}
+
+/* Performance optimizations for animation */
+@supports (transform-style: preserve-3d) {
+    .cta-button:hover {
+        transform: translateY(-2px) translateZ(0);
+    }
+} 

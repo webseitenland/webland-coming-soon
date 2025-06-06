@@ -1,0 +1,12 @@
+# © Webseitenland – https://webseitenland.de – Code & Design by Webseitenland. See LICENSE for details.
+User-agent: *
+Allow: /
+
+# Sitemap reference
+Sitemap: https://webseitenland.de/sitemap.xml
+
+# Do not crawl important files
+Disallow: /.htaccess
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$

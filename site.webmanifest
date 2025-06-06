@@ -1,0 +1,25 @@
+{
+  "name": "Webseitenland - Coming Soon",
+  "short_name": "Webseitenland",
+  "description": "Webseitenland arbeitet an einer neuen Website. Bleiben Sie dran für professionelle Webdesign- und Entwicklungsdienstleistungen.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#ff6b00",
+  "icons": [
+    {
+      "src": "images/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "de-DE",
+  "dir": "ltr",
+  "orientation": "portrait",
+  "categories": ["business", "web development", "design"]
+} 

@@ -1,0 +1,33 @@
+# This website was created with Webseitenland. === Webseitenland - https://webseitenland.de/ ===
+
+# Activation of the Rewrite Engine
+RewriteEngine On
+
+# Exclude specific IPs from redirection (optional - for admin access)
+# RewriteCond %{REMOTE_ADDR} !^123\.456\.789\.000
+
+# Check if the file does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect all requests to the Coming-Soon page
+RewriteRule ^(.*)$ index.html [L]
+
+# Set HTTP status code to 503 (Service Unavailable)
+<IfModule mod_headers.c>
+    Header set Retry-After "86400"
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</IfModule>
+
+# Prevent access to certain files (optional)
+<FilesMatch "(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|json|lock|swp)|~)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
+
+# Security configurations
+Options -Indexes
+ServerSignature Off 
